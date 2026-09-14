@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Logistics Account - Management</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-mark">LA</div><div><strong>Logistics Account</strong><small>Management</small></div></div>
+  <nav class="nav">
+    <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+    <button class="nav-item" data-page="transactions"><span>↔</span> Transactions</button>
+    <button class="nav-item" data-page="accounts"><span>▤</span> Accounts</button>
+    <button class="nav-item" data-page="statements"><span>▥</span> Statements</button>
+    <button class="nav-item" data-page="journal"><span>▣</span> Journal Accounts</button>
+    <button class="nav-item" data-page="reports"><span>◫</span> Reports</button>
+    <button class="nav-item admin-only" data-page="staff"><span>♙</span> Staff Management</button>
+  </nav>
+  <div class="sidebar-bottom">
+    <button class="nav-item" data-page="settings"><span>⚙</span> Settings</button>
+    <button class="nav-item" data-page="help"><span>?</span> Help</button>
+    <button class="nav-item" id="logout"><span>↪</span> Sign Out</button>
+  </div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="search"><span>⌕</span><input id="searchInput" placeholder="Search transactions, accounts..."></div>
+  <div class="top-actions"><button class="icon-btn">🔔<i></i></button><div class="user">
+    <div class="avatar" id="avatar">AD</div><div class="user-text"><strong id="userName">Admin</strong><small id="userRole">Administrator</small></div>
+  </div></div>
+</header>
+
+<section class="content">
+<div class="welcome"><div><p class="eyebrow">LOGISTICS ACCOUNT V4</p><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">Overview of your accounting activity and financial performance.</p></div><div class="date-pill" id="today"></div></div>
+<div id="pageContent"></div>
+</section>
+</main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
